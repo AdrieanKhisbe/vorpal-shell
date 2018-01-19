@@ -14,10 +14,13 @@
     "url": "git+https://github.com/AdrieanKhisbe/vorpal-shell.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adrien Becchis",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AdrieanKhisbe/vorpal-shell/issues"
   },
-  "homepage": "https://github.com/AdrieanKhisbe/vorpal-shell#readme"
+  "homepage": "https://github.com/AdrieanKhisbe/vorpal-shell#readme",
+  "dependencies": {
+    "shelljs": "^0.8.0"
+  }
 }
