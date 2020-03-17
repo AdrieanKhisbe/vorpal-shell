@@ -1,4 +1,7 @@
+const path = require('path');
 const shelljs = require('shelljs');
+
+const completionScriptPath = path.join(__dirname, 'capture-completion.zsh');
 
 module.exports = (options = {}) => vorpal => {
   const {shell = 'bash'} = options;
@@ -8,11 +11,15 @@ module.exports = (options = {}) => vorpal => {
     .autocomplete({
       data: async () => {
         const command = vorpal.ui.input();
-        const shellComp = shelljs.exec(`~/git/vorpal-shell/capture.zsh '${command.substring(2)}'`, {
+        const shellComp = shelljs.exec(`${completionScriptPath} '${command.substring(2)}'`, {
           shell: 'zsh',
           silent: true
         });
-        return shellComp.stdout.split(/\r?\n/).map(line => line.split(' ')[0]);
+        const res = shellComp.stdout
+          .trim()
+          .split(/\r?\n/)
+          .map(line => line.split(' ')[0]);
+        return res;
       }
     })
     .allowUnknownOptions()

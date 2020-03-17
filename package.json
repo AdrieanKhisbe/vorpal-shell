@@ -9,14 +9,22 @@
     "README.md"
   ],
   "scripts": {
+    "start": "node examples/vorpal-shell",
     "lint": "eslint src examples",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:unit": "echo \"No automated test so far, play around with 'npm start'\" && exit 0",
+    "test": "npm run lint && npm run test:unit"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdrieanKhisbe/vorpal-shell.git"
   },
-  "keywords": [],
+  "keywords": [
+    "vorpal",
+    "shell",
+    "bash",
+    "zsh",
+    "completion"
+  ],
   "author": "Adrien Becchis",
   "license": "MIT",
   "bugs": {

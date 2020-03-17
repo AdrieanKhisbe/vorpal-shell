@@ -1,3 +1,6 @@
+tmp
+private
+
 # no lock for now
 package-lock.json
 
