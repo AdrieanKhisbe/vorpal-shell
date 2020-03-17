@@ -1,10 +1,6 @@
 #!/bin/zsh
 # from: https://github.com/Valodim/zsh-capture-completion
 
-
-source <(antibody init) 
-echo "zsh-users/zsh-completions src" | antibody bundle
-
 zmodload zsh/zpty || { echo 'error: missing module zsh/zpty' >&2; exit 1 }
 
 # spawn shell
