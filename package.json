@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/AdrieanKhisbe/vorpal-shell#readme",
   "dependencies": {
-    "shelljs": "^0.8.0"
+    "shelljs": "^0.8.3"
   }
 }
