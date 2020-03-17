@@ -2,10 +2,12 @@
   "name": "vorpal-shell",
   "version": "0.1.0",
   "description": "Vorpal Extension for running shell commands",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

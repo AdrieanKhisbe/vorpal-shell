@@ -1,5 +1,5 @@
 const Vorpal = require('vorpal');
-const vorpalShell = require('../lib');
+const vorpalShell = require('../src');
 
 const vorpal = Vorpal();
 
